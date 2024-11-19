@@ -3,13 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 650px;
     background: url(img/gradient.avif) no-repeat;
     background-size: cover;
     background-position: center;
@@ -139,3 +140,93 @@ body {
 .registration-link p a:hover {
     text-decoration: underline;
 }
+
+/* registration style starts */
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px black;
+    border: 2px solid rgba(219, 30, 30, 0.2);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/* Table styling */
+.form-table {
+    width: 100%;
+    border-spacing: 10px;
+}
+
+/* Label styling */
+.form-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Input and select fields */
+.form-input,
+.form-textarea,
+.form-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 14px;
+    background: transparent;
+    color: white;
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+/* Radio buttons */
+.form-radio {
+    margin-right: 5px;
+}
+
+/* Submit button */
+.form-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #30fa3a;
+}
+
+/* Center the submit button */
+.form-submit-cell {
+    text-align: center;
+}
+
+
+.form-select option {
+    color: black;
+}
+
+
+.form-radio {
+    accent-color: rgb(8, 8, 8);
+}
+
+/*end of registration style */

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h2 class="form-title">Sign Up</h2>
+        <form action="#" method="post" class="signup-form">
+            <table class="form-table">
+                <tr>
+                    <td><label for="first-name" class="form-label">First Name:</label></td>
+                    <td><input type="text" id="first-name" name="first-name" class="form-input" required></td>
+                </tr>
+                <tr>
+                    <td><label for="last-name" class="form-label">Last Name:</label></td>
+                    <td><input type="text" id="last-name" name="last-name" class="form-input" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob" class="form-label">Date of Birth:</label></td>
+                    <td><input type="date" id="dob" name="dob" class="form-input" required></td>
+                </tr>
+                <tr>
+                    <td><label for="age" class="form-label">Age:</label></td>
+                    <td><input type="number" id="age" name="age" class="form-input" required></td>
+                </tr>
+                <tr>
+                    <td class="form-label">Gender:</td>
+                    <td>
+                        <label><input type="radio" id="male" name="gender" value="male" class="form-radio" required>
+                            Male</label>
+                        <label><input type="radio" id="female" name="gender" value="female" class="form-radio" required>
+                            Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="phone" class="form-label">Phone Number:</label></td>
+                    <td><input type="tel" id="phone" name="phone" class="form-input" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email" class="form-label">Email Address:</label></td>
+                    <td><input type="email" id="email" name="email" class="form-input" required></td>
+                </tr>
+                <tr>
+                    <td><label for="address" class="form-label">Address:</label></td>
+                    <td><textarea id="address" name="address" class="form-textarea" rows="3" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="state" class="form-label">State:</label></td>
+                    <td>
+                        <select id="state" name="state" class="form-select" required>
+                            <option disabled selected>Select a state</option>
+                            <option value="kerala">Kerala</option>
+                            <option value="karnataka">Karnataka</option>
+                            <option value="tamilnadu">Tamil Nadu</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="city" class="form-label">City:</label></td>
+                    <td>
+                        <select id="city" name="city" class="form-select" required>
+                            <option value="" disabled selected>Select a city</option>
+                            <option value="kerala">Kerala</option>
+                            <option value="karnataka">Karnataka</option>
+                            <option value="tamilnadu">Tamil Nadu</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="username" class="form-label">Username:</label></td>
+                    <td><input type="text" id="username" name="username" class="form-input" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password" class="form-label">Password:</label></td>
+                    <td><input type="password" id="password" name="password" class="form-input" required></td>
+                </tr>
+                <tr>
+                    <td><label for="confirm-password" class="form-label">Confirm Password:</label></td>
+                    <td><input type="password" id="confirm-password" name="confirm-password" class="form-input"
+                            required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="form-submit-cell">
+                        <button type="submit" class="form-button">Sign Up</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
