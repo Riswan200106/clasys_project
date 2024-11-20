@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="home.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /*ABOUT US PAGE CONTENT STYLING */
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0px;
+        }
+
+        .hero-section {
+            background-color: transparent;
+            color: rgb(14, 14, 14);
+            text-align: center;
+            padding: 20px 20px;
+        }
+
+        .hero-section h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .mission {
+            width: 50%;
+            padding: 30px;
+
+        }
+
+        .content-section {
+            padding-right: 70px;
+            padding-bottom: 40px;
+        }
+
+        /* mission Section starts*/
+        .mission-container {
+            max-width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Left Content Section */
+        .content-section {
+            flex: 1;
+        }
+
+        .content-section h2 {
+            color: #00366b;
+            margin-bottom: 10px;
+            padding-left: 50px;
+        }
+
+        .content-section p {
+            line-height: 30px;
+            padding-left: 50px;
+        }
+
+        /* Right Image Section */
+        .image-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-section img {
+            max-width: 70%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* end of mission Section */
+
+        /* team Section */
+        .team-section {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: rgb(238, 234, 234);
+        }
+
+        .team-section h2 {
+            font-size: 2.5em;
+            color: #00366b;
+            margin-bottom: 30px;
+        }
+
+        .team-members {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            max-width: 300px;
+            box-shadow: 0 4px 10px;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class=" heading">
+            <table>
+                <td><img src="img/1533.png" alt="TechWorld Logo" class="logo"></td>
+                <td>
+                    <h1>TECHWORLD</h1>
+                </td>
+            </table>
+        </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="login.html">Sign in</a>
+            <a href="registration.html">Sign up</a>
+            <a href="contact.html">Contact us</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1
+            style="font-size: 40px; font-family: Verdana, Geneva, Tahoma, sans-serif; color:rgb(255, 255, 255); text-shadow: 2px 3px 5px rgb(240, 15, 15);">
+            Empowering
+            Innovation <br>
+            Through
+            Technology</h1>
+    </section>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <h1>About us</h1>
+            <p>Discover who we are and what drives us to innovate and create.</p>
+        </div>
+
+        <!-- Content Section -->
+
+        <div class="mission-container">
+            <div class="content-wrapper">
+                <!-- Left Section -->
+                <div class="content-section">
+                    <h2>Our Mission</h2>
+                    <p>
+                        At Techworld, our mission is to deliver innovative and reliable solutions that empower
+                        businesses and individuals to thrive in a rapidly evolving world. We are committed to
+                        excellence,
+                        integrity, and customer satisfaction.
+                    </p>
+
+                    <h2>Our Vision</h2>
+                    <p>
+                        We envision a world where technology and creativity come together to solve complex
+                        challenges,
+                        improve
+                        lives, and shape a sustainable future for generations to come.
+                    </p>
+                    <p style="color: blue; padding-left: 500px;">We are established in 2022.
+                    </p>
+                </div>
+
+                <!-- Right Section Image -->
+                <div class="image-section">
+                    <img src="img/about.jpg" alt="Mission and Vision">
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Team Section -->
+        <div class="team-section">
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="img/team-3.jpg" alt="Team Member 1">
+                    <h3>John Doe</h3>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="img/testimonial-1.jpg" alt="Team Member 2">
+                    <h3>Jane Smith</h3>
+                    <p>Managing director</p>
+                </div>
+                <div class="team-member">
+                    <img src="img/testimonial-3.jpg" alt="Team Member 3">
+                    <h3>Emily Brown</h3>
+                    <p>Head of Marketing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="address">
+                <h3>Quick contacts</h3>
+                <p>123 Main Street, City, Country</p>
+                <p>Email: info@example.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+            <div class="about">
+                <h3>Quick links</h3>
+                <p><a href="home.html" style="color: rgb(245, 241, 241); font-size: larger;">Techworld</a></p>
+                <p><a href="contact.html" style="color: rgb(245, 241, 241); font-size: larger;">Contact us</a></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="fab fa-facebook fa-1x"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <i class="fab fa-twitter fa-1x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <i class="fab fa-linkedin fa-1x"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="fab fa-instagram fa-1x"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <p>© 2024 My Website. All rights reserved by risvan.</p>
+    </footer>
+</body>
+
+</html>
