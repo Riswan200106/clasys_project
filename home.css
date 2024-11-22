@@ -11,12 +11,6 @@ body {
     border-radius: 100px;
 }
 
-footer {
-    background: #0c0d3b;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 20px 0;
-}
 
 header {
     background: transparent;
@@ -29,6 +23,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 header a {
@@ -44,7 +39,7 @@ header a:hover {
 }
 
 .hero {
-    height: 80vh;
+    height: 90vh;
 
     background: url(img/4.avif) no-repeat;
     background-size: cover;
@@ -58,13 +53,13 @@ header a:hover {
 }
 
 .content {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     /* Center the content */
-    padding: 20px 90px 50px 60px;
+    padding: 20px 90px 50px 0px;
     justify-items: center;
     text-align: center;
-    background: linear-gradient(to bottom, rgb(218, 218, 218), rgb(255, 255, 255));
+    background: linear-gradient(to bottom, rgb(130, 174, 255), rgb(255, 255, 255));
     /* Add some padding */
 }
 
@@ -79,17 +74,24 @@ header a:hover {
     text-shadow: 0px 2px rgb(201, 18, 18);
 }
 
+footer {
+    background: #0c0d3b;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px 0;
+}
+
 .footer-content {
     display: flex;
     justify-content: space-between;
     /* Place elements on opposite sides */
-    /* Align content at the top */
     max-width: 1200px;
-
+    margin: 0 auto;
 }
 
 .footer-content div {
-    width: 50%;
+    width: 45%;
+    min-width: 250px;
     /* Ensure both sections take up equal space */
 }
 
@@ -98,23 +100,18 @@ header a:hover {
 }
 
 .footer-content p {
-    margin: 25px;
+    margin: 15px;
 }
 
-.about {
-    padding-left: 300px;
-}
 
-.address {
-    padding-left: 300px;
-}
 
 /* social media icons */
 .social-icons {
-    padding-left: 80px;
     display: flex;
     gap: 15px;
-    justify-content: center;
+    /* Align to the left */
+    margin-top: 20px;
+    margin-left: 220px;
 }
 
 .social-icons a {
@@ -128,13 +125,27 @@ header a:hover {
     /*  */
 }
 
+@media (max-width:768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+
+
 /*feature section styling  */
 .feature {
     max-width: 100%;
-    margin: 10px auto;
+    margin: 0px auto;
     padding: 20px;
 
-    background: linear-gradient(to top, rgb(218, 218, 218), rgb(255, 255, 255));
+    background: linear-gradient(to top, rgb(130, 174, 255), rgb(255, 255, 255));
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -149,4 +160,48 @@ header a:hover {
     text-align: center;
     color: #1f1e1e;
     margin-bottom: 15px;
+}
+
+
+
+
+.home-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    transition: transform 0.9s ease, box-shadow 0.9s ease;
+}
+
+.home-img img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(255, 3, 3, 0.3);
+}
+
+/* Styling the images */
+.home-img img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for tablet Screens */
+@media (max-width: 768px) {
+    .home-img img {
+        max-width: 100%;
+    }
+}
+
+/* Media Queries for Very Small Screens */
+@media (max-width: 480px) {
+    .home-img {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.home-img {
+    img
 }

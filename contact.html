@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="home.css">
 </head>
 <style>
@@ -12,14 +13,29 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background: white;
+        background: rgb(248, 248, 248);
     }
+
+    .hero {
+        height: 90vh;
+        width: 100%;
+        background: url(img/3.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
 
     .contact-container {
         max-width: 600px;
         margin: 60px auto;
         padding: 30px;
-        background: rgb(241, 232, 213);
+        background: rgb(230, 229, 233);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
     }
@@ -75,6 +91,11 @@
         color: #000000;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
+
+    .error {
+        color: rgb(247, 16, 16);
+        font-style: italic;
+    }
 </style>
 
 <body>
@@ -97,11 +118,8 @@
 
     <section class="hero">
         <h1
-            style="font-size: 40px; font-family: Verdana, Geneva, Tahoma, sans-serif; color:rgb(255, 255, 255); text-shadow: 2px 3px 5px rgb(240, 15, 15);">
-            Empowering
-            Innovation <br>
-            Through
-            Technology</h1>
+            style="font-size: 40px; font-family: Verdana, Geneva, Tahoma, sans-serif; color:rgb(255, 255, 255); text-shadow: 2px 3px 5px rgb(23, 5, 102);">
+            Building Smarter Solutions <br> Every Day</h1>
     </section>
 
     <div class="info">We’d love to hear from you
@@ -109,34 +127,39 @@
         answer your questions.</div>
     <div class="contact-container">
         <h1 style="text-align: center; color: #0c0d3b;">Contact us</h1>
-        <form action="#" method="post">
+        <form id="contact-form" action="#" method="post">
             <div class="contact-form">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <div class="error" id="name-error"></div>
             </div>
             <div class="contact-form">
                 <label for="email">Your Email:</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <div class="error" id="email-error"></div>
             </div>
             <div class="contact-form">
                 <label for="message">Your Message:</label>
                 <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                <div class="error" id="message-error"></div>
             </div>
             <button type="submit">Send Message</button>
         </form>
+
     </div>
     <footer>
         <div class="footer-content">
             <div class="address">
-                <h3>Quick contacts</h3>
+                <h3>Quick contacts </h3>
                 <p>123 Main Street, City, Country</p>
                 <p>Email: info@example.com</p>
                 <p>Phone: +123 456 7890</p>
             </div>
             <div class="about">
                 <h3>Quick links</h3>
-                <p><a href="home.html" style="color: rgb(245, 241, 241); font-size: larger;">Techworld</a></p>
-                <p><a href="contact.html" style="color: rgb(245, 241, 241); font-size: larger;">Contact us</a></p>
+                <p><a href="about.html" style="color: rgb(245, 241, 241); font-size: larger;">About page</a></p>
+                <p><a href="contact.html" style="color: rgb(245, 241, 241); font-size: larger;">Contact us</a>
+                </p>
                 <div class="social-icons">
                     <a href="https://www.facebook.com" target="_blank">
                         <i class="fab fa-facebook fa-1x"></i>
@@ -156,6 +179,9 @@
         </div>
         <p>© 2024 My Website. All rights reserved by risvan.</p>
     </footer>
+
+
+    <script src="scripts/contact.js"></script>
 </body>
 
 </html>

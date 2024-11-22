@@ -5,38 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login form</title>
-
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-    <div class="header">
-        <img src="img/1533.png" alt="Logo" class="logo">
-        <a href="home.html">
-            <h1 class="site-title">TECHWORLD</h1>
-        </a>
-    </div>
+
     <div class="login-page">
-        <form action="">
+        <div class="header">
+            <a href="home.html"><img src="img/1533.png" alt="Logo" class="logo"></a>
+        </div>
+        <form action="" class="signin-form">
             <h1>Sign in</h1>
-            <div class="input-text">
-                <input type="text" placeholder="Username" required>
+            <div class="error-message" style="color: red; display: none; padding-left: 30px; padding-top: 15px;">Invalid
+                username or
+                password.
+            </div>
+            <div class=" input-text">
+                <input type="text" placeholder="Username" id="signin-username" required>
             </div>
             <div class="input-text">
-                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Password" id="signin-password" required>
             </div>
             <div class="remember-box">
                 <label><input type="checkbox">Remember me</label>
-                <a href=" #">Forgot password</a>
+                <a href="#">Forgot password</a>
             </div>
-            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn">Sign in</button>
             <div class="registration-link">
                 <p>Don't have an account? <a href="registration.html">Sign up</a></p>
             </div>
         </form>
-
     </div>
+
+    <script src="scripts/login.js"></script>
 </body>
 
 </html>

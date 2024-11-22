@@ -17,28 +17,34 @@
             padding: 0px;
         }
 
-        .hero-section {
-            background-color: transparent;
-            color: rgb(14, 14, 14);
+        .hero {
+            height: 90vh;
+
+            background: url(img/2.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            padding: 20px 20px;
+            padding: 0;
+        }
+
+        .hero-section {
+
+            color: rgb(37, 37, 37);
+            text-align: center;
+            padding: 10px 20px;
         }
 
         .hero-section h1 {
+            color: #00366b;
             font-size: 2.5em;
             margin-bottom: 10px;
         }
 
-        .mission {
-            width: 50%;
-            padding: 30px;
 
-        }
-
-        .content-section {
-            padding-right: 70px;
-            padding-bottom: 40px;
-        }
 
         /* mission Section starts*/
         .mission-container {
@@ -55,11 +61,13 @@
             border-radius: 8px;
             padding: 20px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex-wrap: wrap;
         }
 
         /* Left Content Section */
         .content-section {
             flex: 1;
+            min-width: 300px;
         }
 
         .content-section h2 {
@@ -79,6 +87,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            min-width: 300px;
         }
 
         .image-section img {
@@ -86,6 +95,42 @@
             height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .content-section h2,
+            .content-section p {
+                padding-left: 0;
+            }
+
+            .image-section img {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content-wrapper {
+                padding: 15px;
+            }
+
+            .content-section h2 {
+                font-size: 1.2rem;
+            }
+
+            .content-section p {
+                font-size: 0.9rem;
+            }
+
+            .image-section img {
+                max-width: 100%;
+            }
         }
 
         /* end of mission Section */
@@ -148,11 +193,8 @@
 
     <section class="hero">
         <h1
-            style="font-size: 40px; font-family: Verdana, Geneva, Tahoma, sans-serif; color:rgb(255, 255, 255); text-shadow: 2px 3px 5px rgb(240, 15, 15);">
-            Empowering
-            Innovation <br>
-            Through
-            Technology</h1>
+            style="font-size: 40px; font-family: Verdana, Geneva, Tahoma, sans-serif; color:rgb(255, 255, 255); text-shadow: 2px 3px 5px rgb(15, 120, 240);">
+            Shaping the Future with<br> Artificial Intelligence</h1>
     </section>
 
     <div class="container">
@@ -183,7 +225,11 @@
                         improve
                         lives, and shape a sustainable future for generations to come.
                     </p>
-                    <p style="color: blue; padding-left: 500px;">We are established in 2022.
+                    <h2>Our Team</h2>
+                    <p>
+                        With a multi-talented team, Techworld thrives on expertise and dedication,
+                        achieving
+                        milestones and creating a dynamic work environment.
                     </p>
                 </div>
 
